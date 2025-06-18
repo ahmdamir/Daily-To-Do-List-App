@@ -1,0 +1,148 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    font-family: "Cairo", sans-serif;
+}
+.todo-list{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.todo-list .container {
+   position: absolute;
+   top: 50px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 80%;
+   background-color: rgb(228, 219, 219);
+   
+    
+}
+
+.todo-list .container .header {
+    text-align: center;
+    background-color:rgb(70 127 155);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.todo-list .container .header h1 {
+    flex:1;
+}
+
+.todo-list .container .header .add-task-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.todo-list .container .header .add-task-wrapper  i {
+    margin-right: 15px;
+    color: black;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.todo-list .container .header .add-task-wrapper  .tooltip {
+    position: absolute;
+    top: -35px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #333;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: 0.3s ease;
+    z-index: 10;
+}
+
+.todo-list .container .header .add-task-wrapper:hover .tooltip {
+    opacity: 1;
+    top: -45px;
+}
+
+
+.todo-list .container .task-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list .container .task-table .task {
+    width: 90%;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #444444;
+    background-color: #7d7d7d;
+    direction: rtl;
+    transition: .3s;
+    font-family: "Rakkas", serif;
+    
+    
+}
+.todo-list .container .task-table .task.done {
+    
+    background-color: rgb(55 155 147 / 89%);
+    
+}
+
+.todo-list .container .task-table .task:hover {
+    transition: 0.3s;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.507);
+   
+}
+.todo-list .container .task-table .task span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #444444;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.todo-list .container .task-table .task p {
+    margin:  0 15px;
+    font-weight: normal;
+    font-size: 28px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    flex: 1;
+    line-height: 1.5;
+    color: white;
+}
+
+.todo-list .container .task-table .task .icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    
+}
+
+.task .icons i {
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
