@@ -51,6 +51,7 @@ html, body {
     .todo-list .container .header {
         font-size: 13px;
         height: 60px;
+        gap: 0px;
     }
     
 }
@@ -85,6 +86,14 @@ html, body {
     opacity: 0;
     transition: 0.3s ease;
     z-index: 10;
+}
+
+@media (max-width: 667px) {
+    .todo-list .container .header .add-task-wrapper  .tooltip {
+        font-size: 12px;
+        right: 100%;
+    }
+    
 }
 
 .todo-list .container .header .add-task-wrapper:hover .tooltip {
