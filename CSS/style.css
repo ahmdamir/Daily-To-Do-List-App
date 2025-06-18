@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+}
 html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100%;
     font-family: "Cairo", sans-serif;
+    overflow-x: hidden;
 }
 .todo-list{
     background-color: white;
@@ -19,10 +23,17 @@ html, body {
    left: 50%;
    transform: translateX(-50%);
    width: 80%;
-   background-color: rgb(228, 219, 219);
-   
+   background-color: rgb(228, 219, 219); 
+}
+
+@media (max-width: 667px) {
+    .todo-list .container {
+        width: 90%;
+        
+    }
     
 }
+
 
 .todo-list .container .header {
     text-align: center;
@@ -35,6 +46,13 @@ html, body {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+}
+@media (max-width: 667px) {
+    .todo-list .container .header {
+        font-size: 13px;
+        height: 60px;
+    }
+    
 }
 .todo-list .container .header h1 {
     flex:1;
@@ -92,7 +110,12 @@ html, body {
     direction: rtl;
     transition: .3s;
     font-family: "Rakkas", serif;
-    
+}
+@media (max-width: 667px) {
+    .todo-list .container .task-table .task {
+        padding: 5px;
+        margin: 5px;
+    }
     
 }
 .todo-list .container .task-table .task.done {
@@ -118,6 +141,14 @@ html, body {
     font-size: 20px;
     font-weight: bold;
 }
+@media (max-width: 667px) {
+    .todo-list .container .task-table .task span {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+    
+}
 .todo-list .container .task-table .task p {
     margin:  0 15px;
     font-weight: normal;
@@ -129,12 +160,26 @@ html, body {
     color: white;
 }
 
+@media (max-width: 667px) {
+    .todo-list .container .task-table .task p {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    
+}
 .todo-list .container .task-table .task .icons {
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 30px;  
+}
+@media (max-width: 667px) {
+    .todo-list .container .task-table .task .icons {
+        gap: 5px;
+        margin: 0 ;
+        
+    }
     
 }
 
@@ -144,5 +189,12 @@ html, body {
     font-size: 15px;
     padding: 10px;
     border-radius: 50%;
+}
+@media (max-width: 667px) {
+    .task .icons i {
+        font-size: 10px;
+        padding: 5px;
+    }
+    
 }
 
