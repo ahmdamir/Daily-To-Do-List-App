@@ -78,5 +78,5 @@ Made with ❤️ by [Ahmed Amir](https://github.com/ahmdamir)
 - 🔗 GitHub: [@ahmdamir](https://github.com/ahmdamir)  
 - 🌐 Live App: [cheerful-gingersnap-1fb94f.netlify.app](https://cheerful-gingersnap-1fb94f.netlify.app/)  
 - 📧 Email: ahmedamir321123@gmail.com
-- 💼 LinkedIn: [Ahmed Amir](https://www.linkedin.com/in/ahmdamir/)  
+- 💼 LinkedIn: [Ahmed Amir](https://www.linkedin.com/in/ahmd-amir/)  
 
