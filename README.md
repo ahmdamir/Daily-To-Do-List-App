@@ -4,7 +4,7 @@ A simple and elegant daily to-do list web application built with HTML, CSS, and 
 It allows users to add, delete, edit, and mark tasks as completed — helping them stay productive and organized throughout the day.
 
 🚀 **Live Demo**:  
-[👉 Try the App](https://cheerful-gingersnap-1fb94f.netlify.app/)
+[👉 Try the App](https://ahmdamir.github.io/Daily-To-Do-List-App/)
 
 ---
 
